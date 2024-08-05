@@ -1,0 +1,63 @@
+#include <iostream>
+
+int main() {
+
+ //Define variables 
+  double weight;
+  int x;
+
+//Asking for users weight
+  std::cout << "Please enter your current earth weight: ";
+  std::cin >> weight;
+
+//Displaying the users options
+  std::cout << "\nI have information for the following planets:\n\n";
+  std::cout << "  1. Mercury  2. Venus  3. Mars  4. Jupiter\n";
+  std::cout << "  5. Saturn 6. Uranus 7. Neptune\n\n";
+
+//Asking for the planet
+  std::cout << "Which planet are you visiting? ";
+  std::cin >> x;
+
+//Using 'x' to identify the planet
+//Using weight for the calculation
+
+//Mercury
+  if (x == 1) {
+    weight == weight * 0.38;
+  }
+
+//Venus
+    else if (x == 2) {
+    weight = weight * 0.91;
+    }
+
+//Mars
+    else if (x == 3){
+    weight = weight * 0.38;
+    }
+
+//Jupiter
+    else if (x ==4){
+    weight = weight * 2.34;
+    }
+    
+  //Saturn
+    else if (x ==5){
+    weight = weight * 1.06;
+    }
+
+//Uranus
+    else if (x == 6){
+    weight = weight * 0.92;
+    }
+
+//Neptune  
+    else if (x ==7){
+    weight = weight * 1.19;
+    }
+
+  //Output the weight in the planet chosen by the user
+  std::cout << "\nYour weight: " << weight << "\n";
+  
+}
